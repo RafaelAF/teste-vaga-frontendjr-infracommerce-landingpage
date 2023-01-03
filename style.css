@@ -164,20 +164,90 @@ body{
 .img3 .circle2 img{
     width: 100px;    
 }
-
+.rules{
+    display: flex;
+    align-items: center;
+}
 .rules-container{
     width: 100%;
     background-color: #fff;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 .rules-container .rules{
     display: grid;
-    background-color: #def;
-    grid-template-columns: 1fr 2fr;
-    height: 250px;
+    gap: 30px;
+
+    grid-template-columns: 3fr 5fr;
+    height: 400px;
 }
 .rules .rules-1{
     background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    height: 300px;
+}
+.rules-imgs-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.rules-2{
+    display: flex;
+}
+.rules-2 .squares-container{}
+
+.squares{
+    margin:10px;
+    position: relative;
+    width: 400px;
+    height: 110px;
+}
+.squares .squares1{
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    border: 1px solid rgb(167, 167, 167);
+    bottom: 0;
+    transform: translate(10px, 10px);
+}
+.squares .squares2{
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgb(167, 167, 167);
+    padding: 20px;
+    height: 100%;
+    z-index: 1;
+}
+.squares .squares2 p{
+    font-size: 22px;
+    color: #777;
+}
+.squares .squares2 b{
+    color: #000;
+}
+.squares .squares2 strong{
+    color: orange;
+}
+
+.rules-imgs{
+    display: flex;
+    align-items: center;
+
+}
+.rules-imgs img {
+    width: 100px;
+}
+.rules-imgs p {
+    font-size: 30px;
+}
+
+
+.squares-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 .footer-container{
@@ -186,7 +256,52 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
 }
+.questions-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions-container h3{
+    font-size: 2rem;
+    color: orange;
+}
+.questions-container > p{
+    color: #777;
+}
+.questions{
+    max-width: 700px;
+    min-width: 300px;
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    width: 700px;
+    margin-bottom: 5px;
+}
+.question .up{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.question .down{
+    display: none;
+    margin-bottom: 10px;
+    transition: all 3s ease-in;
+}
+.question img{
+    width: 20px;
+    transform: rotateZ(-90deg);
+    
+}
+.reg a{
+    color: #333;
+    text-decoration: none;
+}
+
 .chat{
     width: 80px;
     height: 70px;
@@ -212,6 +327,7 @@ body{
     padding: 0 30px;
     align-items: center;
     background-color: #ddd;
+    margin-top: 50px;
 }
 .more a {
     color: #000;
@@ -233,5 +349,17 @@ body{
     .seta1 img, .seta2 img{
         margin: 30px 0;
         transform: rotateZ(-90deg);
+    }
+    .rules-container .rules{
+        display: grid;
+        gap: 30px;
+
+        grid-template-columns: 1fr;
+        height: 400px;
+    }
+    .squares-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
     }
   }
