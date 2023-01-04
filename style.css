@@ -128,7 +128,7 @@ body{
 }
 
 .circle1 {
-    border: 1px solid #000;
+    border: 1px solid rgb(100, 100, 100);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -141,7 +141,7 @@ body{
     position: absolute;
     top: -8px;
     right: 10px;
-    background-color:#fff;
+    background-color:orange;
 }
 .img1 .circle2{
     display: flex;
@@ -388,6 +388,9 @@ body{
   }
 
 @media only screen and (max-width: 768px) {
+    .ads{
+        height: 80px;
+    }
     .steps{
         flex-direction: column;
 
@@ -405,6 +408,10 @@ body{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     
+    }
+    .squares .squares2 p{
+        font-size: 18px;
+
     }
     .more{
         height: 100px;
