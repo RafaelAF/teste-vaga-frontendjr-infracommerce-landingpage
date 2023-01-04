@@ -16,10 +16,10 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #fff;
+    background-color: #fafafa;
 }
 .ads-text a{
-    color: orange;
+    color: #F18410;
     text-decoration: none;
     font-weight: bold;
 }
@@ -48,7 +48,6 @@ body{
     margin: 20px auto;
     display: flex;
     align-items: center;
-
 }
 .bannerContent h1{
     color: #fff; 
@@ -56,7 +55,7 @@ body{
     font-size: 1.5rem;
 }
 .bannerContent h1 strong{
-    color: orange; 
+    color: #F18410; 
 }
 
 .main-container{
@@ -70,7 +69,13 @@ body{
 .bannerLogo{
     width: 90px;
     position: relative;
-
+}
+.bannerLogo .vc{
+    font-size: 2rem;
+}
+.bannerLogo .desc{
+    font-size: 8px;
+    color: #787878;
 }
 .bannerLogo > p{
     color: #fff;
@@ -80,7 +85,8 @@ body{
     color: #ff0;
 }
 .bannerContent h2{
-    color: orange;
+    color: #F18410;
+    margin-left: 18px;
 }
 
 .bannerLogo span{
@@ -97,13 +103,13 @@ body{
 .bannerLogo span p > b{
     position: absolute;
     top: 0;
-    color: orange;
+    color: #F18410;
 }
 .steps{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
+    background-color: #ececec;
     padding: 120px 0;
 }
 .steps .img1, .steps .img2, .steps .img3{
@@ -141,7 +147,7 @@ body{
     position: absolute;
     top: -8px;
     right: 10px;
-    background-color:orange;
+    background-color:#F18410;
 }
 .img1 .circle2{
     display: flex;
@@ -170,7 +176,7 @@ body{
 }
 .rules-container{
     width: 100%;
-    background-color: #fff;
+    background-color: #fafafa;
     padding: 50px 0;
 }
 .rules-container .rules{
@@ -181,7 +187,7 @@ body{
     min-height: 400px;
 }
 .rules .rules-1{
-    background-color: orange;
+    background-color: #ff7f00;
     display: flex;
     justify-content: flex-end;
     padding: 30px;
@@ -193,6 +199,7 @@ body{
     align-items: flex-start;
     justify-content: center;
 }
+
 .rules-2{
     display: flex;
 }
@@ -228,7 +235,7 @@ body{
     color: #000;
 }
 .squares .squares2 strong{
-    color: orange;
+    color: #F18410;
 }
 
 .rules-imgs{
@@ -237,13 +244,20 @@ body{
 
 }
 .rules-imgs img {
-    width: 100px;
+    width: 150px;
 }
 .rules-imgs p {
-    font-size: 30px;
+    font-size: 8rem;
 }
-
-
+.rules-imgs-content .rules-text{
+    color: #fafafa;
+}
+.rules-imgs-content .rules-text h2{
+    font-size: 2rem;
+}
+.rules-imgs-content .rules-text p{
+    font-size: 14px;
+}
 .squares-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -252,7 +266,7 @@ body{
 
 .footer-container{
     width: 100%;
-    background-color: #ddd;
+    background-color: #fafafa;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -266,13 +280,13 @@ body{
 }
 .questions-container h3{
     font-size: 2rem;
-    color: orange;
+    color: #F18410;
 }
 .questions-container > p{
     color: #777;
 }
 .questions{
-
+    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,9 +306,8 @@ body{
     cursor: pointer;
 }
 .question .downContainer{
-    display: flex;
+    display: none;
     margin-bottom: 10px;
-    
 }
 
 
@@ -311,7 +324,7 @@ body{
 .chat{
     width: 80px;
     height: 70px;
-    background-color: orange;
+    background-color: #F18410;
     position: fixed;
     bottom: 60px;
     border-radius: 50%;
@@ -333,7 +346,7 @@ body{
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
-    background-color: #ddd;
+    background-color: #fdeeef;
     margin-top: 50px;
 }
 .more a {
@@ -341,13 +354,27 @@ body{
 }
 .more button{
     border: none;
-    background-color: orange;
+    background-color: #F18410;
     color: #fff;
     padding: 5px 25px;
     border-radius: 5px;
     font-size: 18px;
 }
 @media only screen and (max-width: 1200px) {
+    .ads p{
+        margin: 0 20px;
+    }
+    .banner .bannerContent{
+        width: 80%;
+    }
+    .rules-imgs img {
+        width: 100px;
+    }
+    .rules-imgs p {
+        font-size: 6rem;
+    }
+    
+    
     .steps{
         flex-direction: column;
 
@@ -391,6 +418,16 @@ body{
     .ads{
         height: 80px;
     }
+    .bannerContent{
+        flex-direction: column;
+    }
+    .bannerContent h2{
+        text-align: center;
+    }
+    .bannerContent h1{
+        text-align: center;
+        font-size: 1.2rem;
+    }
     .steps{
         flex-direction: column;
 
@@ -403,6 +440,10 @@ body{
         display: grid;
         gap: 30px;
         grid-template-columns: 1fr;
+    }
+    .questions{
+        max-width: 600px;
+        width: 90%;
     }
     .squares-container{
         display: grid;
