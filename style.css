@@ -32,16 +32,15 @@ body{
 }
 
 .banner-container{
-    height: 500px;
+    height: 600px;
 }
 .banner{
-    background-image: url('./livros.jpg');
-    background-position: right center;
+    background-image: url('./banner-lp.png');
+    background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
-    padding-top: 80px;
 }
 .banner .bannerContent{
     max-width: 1200px;
@@ -141,13 +140,14 @@ body{
     position: absolute;
 }
 .circle2 {
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
     position: absolute;
     top: -8px;
     right: 10px;
-    background-color:#F18410;
+
+}
+.circle2 > img{
+
 }
 .img1 .circle2{
     display: flex;
@@ -198,6 +198,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-left: 150px;
 }
 
 .rules-2{
@@ -240,11 +241,10 @@ body{
 
 .rules-imgs{
     display: flex;
-    align-items: center;
-
+    justify-content: center;
 }
 .rules-imgs img {
-    width: 150px;
+    width: 400px;
 }
 .rules-imgs p {
     font-size: 8rem;
@@ -361,6 +361,13 @@ body{
     font-size: 18px;
 }
 @media only screen and (max-width: 1200px) {
+    .banner-container{
+        height: 300px;
+    }
+    .banner{
+        background-size: cover;
+        
+    }
     .ads p{
         margin: 0 20px;
     }
@@ -368,7 +375,7 @@ body{
         width: 80%;
     }
     .rules-imgs img {
-        width: 100px;
+        width: 80%;
     }
     .rules-imgs p {
         font-size: 6rem;
@@ -401,6 +408,10 @@ body{
     }
     .rules-imgs-content{
         align-items: center;
+        padding: 0;
+    }
+    .rules-imgs-content img{
+        width: 300px;
     }
     .question{
         width: 80%;
@@ -415,6 +426,13 @@ body{
   }
 
 @media only screen and (max-width: 768px) {
+    .banner-container{
+        height: 200px;
+    }
+    .banner{
+        background-size: cover;
+        
+    }
     .ads{
         height: 80px;
     }
@@ -440,6 +458,9 @@ body{
         display: grid;
         gap: 30px;
         grid-template-columns: 1fr;
+    }
+    .rules-imgs img{
+        width: 80%;
     }
     .questions{
         max-width: 600px;
